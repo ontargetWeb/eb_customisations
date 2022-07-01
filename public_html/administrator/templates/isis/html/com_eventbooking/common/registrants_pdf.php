@@ -79,12 +79,14 @@ break;
 <hr/>
 </p>
 
+  
+  
 
 
-<table border="1" width="100%" cellspacing="0" cellpadding="2">
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
    
 	<thead>
-		<tr style="font-weight: bold; text-align: center;">
+		<tr style="font-weight: bold; text-align: left; background-color:#fcfcfc;color:#000;">
 			<th width="5%" height="20">
 				No
 			</th>
@@ -114,6 +116,7 @@ break;
 			
 		</tr>
 	</thead>
+                  <br>
 	<tbody>
 	<?php
 		foreach ($rows as $row)
@@ -128,7 +131,7 @@ break;
 				<td width="10%" height="20"><?php echo $row->eb_teachinglevel; ?></td>
 				<td width="10%" height="20"><?php echo $row->cb_schoolroll; ?></td>
 				<td width="20%" height="20"><?php echo $row->eb_School; ?></td>
-				<td width="30%" height="20"></td>
+				<td width="30%" height="20"><?php echo " " ?><hr/></td>
 				
 			</tr>
 		<?php
