@@ -1,5 +1,7 @@
 <?php
+
 /**
+ * public_html/administrator/templates/isis/html/com_eventbooking/common/registrants_pdf.php 
  * @package            Joomla
  * @subpackage         Event Booking
  * @author             Tuan Pham Ngoc
