@@ -1,4 +1,4 @@
-Activate Certificate on EB
+Activate Certificate on EB joomla 3.10.10 and EB 4.2.0
 ======================================
 Configuration > Turn on Certificate (See ecsligo) Turn on Check-in
 Update cert_blank FULL.png with centre logo
