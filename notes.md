@@ -1,4 +1,5 @@
 Activate Certificate on EB
+======================================
 Configuration > Turn on Certificate (See ecsligo) Turn on Check-in
 Update cert_blank FULL.png with centre logo
 
@@ -13,8 +14,9 @@ Dear [FIRST_NAME] [LAST_NAME],
 Please see your certificate for [EVENT_TITLE] on  [EVENT_DATE], attached.
 
 Thank you for attending,
-======================================
 
+Add Custom field
+======================================
 Custom field > Registrant Type >  Show in List > Make Filterable
 Add Custom Field > List> Attended Hours
 Show On Registrants Management = Yes
@@ -64,19 +66,23 @@ All
 19
 19.5
 20
-======================================
+
 Update Language Strings:
-https://github.com/ontargetWeb/eb_customisations/blob/main/public_html/administrator/language/overrides/en-GB.override.ini
 ======================================
+https://github.com/ontargetWeb/eb_customisations/blob/main/public_html/administrator/language/overrides/en-GB.override.ini
+
 
 Update Admin Menu
+======================================
 https://github.com/ontargetWeb/eb_customisations/blob/main/admin_menu.html
 
 In usermenu
+======================================
 Add > My Courses and Certs (New!)
 
 
 Add Printable CSS for attendance list
+======================================
 public_html/administrator/templates/isis/html/com_eventbooking/common/registrants_pdf.php
 
 https://github.com/ontargetWeb/eb_customisations/blob/main/public_html/administrator/templates/isis/html/com_eventbooking/common/registrants_pdf.php
