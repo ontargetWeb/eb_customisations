@@ -1,6 +1,5 @@
 <?php
 /**
-* administrator/templates/isis/html/com_eventbooking/common/registrants_pdf.php
  * @package            Joomla
  * @subpackage         Event Booking
  * @author             Tuan Pham Ngoc
@@ -8,17 +7,18 @@
  * @license            GNU/GPL, see LICENSE.php
  */
 
+  
+  
 defined('_JEXEC') or die;
-
 $config = EventbookingHelper::getConfig();
 
 $i = 1;
 
 
 ?>
+  
 
-<!-- Make a table to load the logo and event info (title,date,venue,speaker) only loop through the first event title useful for when all the registrants are in the same event-->
-
+  
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
 <tr>
 				<td width="50%" style="text-align: center;">
@@ -33,10 +33,9 @@ foreach ( $rows as $row )
 <p style="padding-bottom: 20px; text-align: center;">
 <?php 
 echo "<h1> $row->title </h1>"; 
-echo "<br>Date / Time: "; 
-echo $row->event_date;
+echo "<br>Date / Time: $row->event_date"; 
 
-//Get the Event location field
+
 $db = JFactory::getDbo();
 $query = $db
     ->getQuery(true)
@@ -58,8 +57,6 @@ $result = $db->loadResult();
 
 
 echo "<br>Venue: $result";
-
-// Get the custom field for speaker
 $registry = new JRegistry($row->custom_fields);
 echo "<br>Tutor:"; echo $registry->get('field_speaker');
 $first = false;
@@ -74,44 +71,44 @@ break;
 
 }
 
-?></td>
+?>
+</td>
 </tr>
 </table>
 <p style="padding-bottom: 20px; text-align: center;">
 <hr/>
 </p>
 
-<!--Load the event registrant rows-->
 
-<table border="1" width="100%" cellspacing="0" cellpadding="2" style="margin-top:25px;">
 
-    
+<table border="1" width="100%" cellspacing="0" cellpadding="2">
+   
 	<thead>
-		<tr>
-			<th width="5%" height="20" style="text-align: center;">
+		<tr style="font-weight: bold; text-align: center;">
+			<th width="5%" height="20">
 				No
 			</th>
-			<th width="5%" height="20" style="text-align: center;">
+			<th width="5%" height="20">
 				<?php echo JText::_('EB_ID'); ?>
 			</th>
-			<th height="20" width="10%" style="text-align: center;">
+			<th height="20" width="10%">
 				<?php echo JText::_('EB_FIRST_NAME'); ?>
 			</th height="20">
-			<th height="20" width="10%" style="text-align: center;">
+			<th height="20" width="10%">
 				<?php echo JText::_('EB_LAST_NAME'); ?>
 			</th height="20">
 		
-			<th height="20" width="10%" style="text-align: center;">
+			<th height="20" width="10%">
 				Type
 			</th>
 
-			<th height="20" width="10%" style="text-align: center;">
+			<th height="20" width="10%">
 				School Roll
 			</th>
-			<th width="20%" height="20" style="text-align: center;">
+			<th width="20%" height="20">
 				School Name
 			</th>
-			<th width="30%" height="20" style="text-align: center;">
+			<th width="30%" height="20">
 				Signature
 			</th>
 			
