@@ -15,6 +15,8 @@ Please see your certificate for [EVENT_TITLE] on  [EVENT_DATE], attached.
 
 Thank you for attending,
 
+The Education Centre Support Team.
+
 Add Custom field
 ======================================
 Custom field > Registrant Type >  Show in List > Make Filterable
