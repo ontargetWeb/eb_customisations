@@ -14,6 +14,7 @@ use Joomla\CMS\Factory;
 
 /**
  * Stripe payment plugin for Events Booking
+ * Modified by Tuan on the 9th of October 2021 to allow switching between stripe accounts
  * Notes - includes function to switch between accounts in administrator/components/com_eventbooking/stripeaccounts.php
  * Modifications to administrator/components/com_eventbooking/view/event/tmpl/default_custom_settings.php 
  * @author Tuan Pham Ngoc
